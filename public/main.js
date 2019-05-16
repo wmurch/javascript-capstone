@@ -9,7 +9,7 @@ const main = () => {
     })
     .then(headerImage => {
       document.querySelector('header').style.backgroundImage =
-        'url(headerImage.hdUrl)'
+        'url(' + headerImage.hdUrl + ')'
 
       console.log(headerImage)
     })
