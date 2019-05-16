@@ -12,7 +12,6 @@ body {
 }
 header {
   height: 25rem;
-  background: url(./images/weather.jpg);
   color: white;
 }
 .top {
@@ -74,7 +73,12 @@ a {
   color: white;
 }
 .mission-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #d1c4e9;
+  color: black;
 }
 .footer-statement {
   display: flex;
