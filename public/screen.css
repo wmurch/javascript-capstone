@@ -10,3 +10,76 @@ body {
   margin: 0;
   min-height: 100%;
 }
+header {
+  height: 25rem;
+  background: url(./images/weather.jpg);
+  color: white;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #512da8;
+  height: 4rem;
+}
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 6rem;
+}
+a {
+  padding: 1rem;
+  color: white;
+}
+.start {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.end {
+  display: flex;
+}
+.site-logo {
+  text-decoration: none;
+}
+.about {
+  margin: 1rem;
+}
+.contact-us {
+  margin: 1rem;
+}
+.main-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: 1rem;
+}
+.launch-section {
+  height: 4rem;
+  background: #ffc107;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  color: white;
+}
+.mission-section {
+  background: #d1c4e9;
+}
+.footer-statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #512da8;
+  width: 100%;
+}
