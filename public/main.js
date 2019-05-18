@@ -18,7 +18,7 @@ const main = () => {
       document.querySelector('.header-center').style.backgroundImage =
         'url(' + headerImage.hdUrl + ')'
 
-      console.log(headerImage)
+      console.log({ headerImage })
     })
   //fetch Nasa launch data
   nasaLaunch =

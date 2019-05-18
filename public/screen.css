@@ -27,6 +27,8 @@ header {
   flex-direction: column;
   font-size: 2rem;
   padding: 6rem;
+  max-height: 100%;
+  max-width: 100%;
 }
 a {
   padding: 1rem;
@@ -57,23 +59,42 @@ a {
   font-size: 0.8rem;
   height: 1rem;
 }
+.main-body {
+  background-color: #ffffff;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
 .launch-section {
   height: 4rem;
   background: #ffc107;
 }
-.main-content {
-  list-style: none;
+.launches {
+  display: flex;
 }
-.active .buttons {
-  padding: 5px 0;
-  background: #eee;
-  text-align: center;
-  z-index: 10;
-  position: relative;
+.launch-info {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.launches button {
+/* .launches button {
   border: none;
   display: none;
+} */
+.left {
+  display: flex;
+  justify-content: flex-start;
+  border: black;
+  min-width: 5rem;
+  min-height: 5rem;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  border: black;
+  min-width: 5rem;
+  min-height: 5rem;
 }
 .prev {
   width: 15px;
@@ -81,7 +102,7 @@ a {
   position: absolute;
   top: 40%;
   margin-left: -20px;
-  display: block !important;
+
   border: 0px solid black;
 }
 .next {
@@ -90,7 +111,7 @@ a {
   position: absolute;
   top: 40%;
   right: -25px;
-  display: block !important;
+
   border: 0px solid black;
 }
 .active button {
