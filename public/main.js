@@ -1,18 +1,19 @@
 //store NASA updates in an array
-position = 0
-articles = []
+
 //load and display carousel
 const updateCarousel = () => {
-  // console.log('Update Carousel')
-  document.querySelector('.launch-title').textContent = articles[position].title
+  console.log(articles[position].title)
+  /* document.querySelector('.launch-title').textContent = articles[position].title
   document.querySelector('.launch-details').textContent =
     articles[position].details
   document.querySelector('.launch-status').textContent =
     articles[position].status
   document.querySelector('.launch-location').textContent =
-    articles[position].location
+    articles[position].location */
 }
 const main = () => {
+  position = 0
+  articles = []
   //fetch pic of the day
   picOfTheDay = 'https://sdg-astro-api.herokuapp.com/api/Nasa/apod'
   fetch(picOfTheDay)
@@ -47,18 +48,18 @@ const main = () => {
           status: launchArticles[position].launch_success,
           location: launchArticles[position].launch_site.site_name_long
         }
-        position = 0
         articles.push(article)
-        updateCarousel()
       }
+      // console.log(articles)
+      updateCarousel()
     })
 }
-console.log(articles)
+//console.log(articles)
 const loadPrevCarousel = () => {
   console.log('Get Previous Carousel')
   prev = position--
   if ((prev = -1)) {
-    return launchArticles.length--
+    return articles.length--
   } else {
     console.log(prev)
     /* document.querySelector('.launch-title').textContent =
@@ -74,7 +75,7 @@ const loadPrevCarousel = () => {
 const loadNextCarousel = () => {
   console.log('Get Next Carousel')
   next = position++
-  if ((next = launchArticles.length)) {
+  if ((next = articles.length)) {
     return 0
   } else {
     console.log(next)
