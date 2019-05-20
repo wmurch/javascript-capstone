@@ -2,7 +2,7 @@
 
 //load and display carousel
 const updateCarousel = () => {
-  console.log(articles[position].title)
+  console.log(articles[0].title)
   /* document.querySelector('.launch-title').textContent = articles[position].title
   document.querySelector('.launch-details').textContent =
     articles[position].details
